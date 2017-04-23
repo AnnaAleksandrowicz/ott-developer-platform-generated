@@ -217,7 +217,7 @@ This API documentation provides specific information on:</p>
 </ul>
 <h3 id="rest-api-request-formats">REST API Request Formats</h3>
 <p>Although both form data and a Kaltura proprietary requests are supported, JSON is the recommended request format, as per the example below:
-(see <a target="_blank" href="http://www.kaltura.com/api_v3/service/asset/action/get">http://www.kaltura.com/api_v3/service/asset/action/get</a> for details):</p>
+(see https://ott.developer.kaltura.com/api-docs/Services/asset/asset_get for details):</p>
 <pre class="language-c"><code> <span class="token punctuation">{</span>
   <span class="token string">"apiVersion"</span><span class="token punctuation">:</span> <span class="token string">"3.6.1579.29065"</span><span class="token punctuation">,</span>
   <span class="token string">"assetReferenceType"</span><span class="token punctuation">:</span> <span class="token string">"media"</span><span class="token punctuation">,</span>
@@ -266,7 +266,7 @@ This API documentation provides specific information on:</p>
     <span class="token string">"service"</span><span class="token punctuation">:</span> <span class="token string">"channel"</span><span class="token punctuation">,</span>
     <span class="token string">"action"</span><span class="token punctuation">:</span> <span class="token string">"get"</span>
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre><p>This enables using responses from one applicative request in another applicative request in the same HTTP request. See <a target="_blank" href="http://www.kaltura.com/api_v3/service/multirequest">http://www.kaltura.com/api_v3/service/multirequest</a> for details.</p>
+<span class="token punctuation">}</span></code></pre><p>This enables using responses from one applicative request in another applicative request in the same HTTP request.</p>
 <pre class="language-c"><code> <span class="token punctuation">{</span>
   <span class="token string">"apiVersion"</span><span class="token punctuation">:</span> <span class="token string">"3.6.1579.29065"</span><span class="token punctuation">,</span>
   <span class="token string">"ks"</span><span class="token punctuation">:</span> <span class="token string">"MGVjNGY4YzBkM2ZhYmIxYTA4Y2VhYjYwZGM4NWQ5NzczNzcxY2JmYXwxODY7MTg2OzE0ODQxNDAwNzE7MDs2MzYxOTc0MzQ3MTA0NDI3NzU7MDAwMDA3MTcyMkBnbWFpbC5jb20udGVzdDs7"</span><span class="token punctuation">,</span>
@@ -344,7 +344,7 @@ Errors are returned in the serialized response (JSON or XML) and automatically i
 <p>TVP-API works with refresh-token, a long-lived token that is created upon login, and an access-token, a short-lived token that used in any request to authenticate the user, the access-token is retrieved from the server using the refresh-token.
 Requests to TVP-API should be accompanied with init-object that contains the access-token.
 Requests to the OTT API can be accompanied by a ks property; this property will usually contain a KS as returned from the OTT API login, but it may also contain an access-token instead. When the access-token is used instead of KS, no init-object is needed; for example
-<a target="_blank" href="http://www.kaltura.com/api_v3/service/asset/action/get">http://www.kaltura.com/api_v3/service/asset/action/get</a>:</p>
+https://ott.developer.kaltura.com/api-docs/Services/asset/asset_get.</p>
 <pre class="language-c"><code> <span class="token punctuation">{</span>
   <span class="token string">"apiVersion"</span><span class="token punctuation">:</span> <span class="token string">"3.6.1579.29065"</span><span class="token punctuation">,</span>
   <span class="token string">"assetReferenceType"</span><span class="token punctuation">:</span> <span class="token string">"media"</span><span class="token punctuation">,</span>
